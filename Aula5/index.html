@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div>
+                <fieldset> <legend>Informações</legend>
+                    <p>
+                        <label for="ano">Ano de nascimento</label>
+                        <input type="number" name="nr_ano" id="ano" min="1900" max="2024">
+                    </p>
+                    <p>
+                        <label for="nm_sexo">Sexo</label> <br>
+                        <input type="radio" name="nm_sexo" id="masculino" value="Masculino" checked>
+                        <label for="masculino">masculino</label>
+
+                        <input type="radio" name="nm_sexo" id="feminino" value="Feminino">
+                        <label for="feminino">Feminino</label>
+                    </p>
+                    <p>
+                        <input type="button" value="verificar" onclick="verificar()">
+                    </p>
+                </fieldset>
+        </div>
+        <div id="resultado">
+            <p>Preencha os dados acima para ver o resultado!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Aula 05
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
